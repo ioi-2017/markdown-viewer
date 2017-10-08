@@ -58,19 +58,19 @@
 	    }
 	    return ('<div style="page-break-inside:avoid"><img src="' + href + '" alt="' + text + '" ' + tags + '></div>');
 	};
-
-  renderer.table = function(header, body) {
-    var html = '';
-    var tags = 'style="page-break-inside:avoid;"';
-    if (header.search('%ltr%') < 0) {
-        tags += ' dir="ltr"';
-    }
-    else {
-        header = header.replace('%ltr%', '');
-    }
-    html = '<div ' + tags + '>' + original_table_renderer(header, body) + '</div>';
-    return html;
-  }
+	
+	renderer.table = function(header, body) {
+		var html = '';
+		var tags = 'style="page-break-inside:avoid;"';
+		if (header.search('%ltr%') < 0) {
+			tags += ' dir="ltr"';
+		}
+		else {
+			header = header.replace('%ltr%', '');
+		}
+		html = '<div ' + tags + '>' + original_table_renderer(header, body) + '</div>';
+		return html;
+	}
 
 
 	// remove trailing newline in code blocks
