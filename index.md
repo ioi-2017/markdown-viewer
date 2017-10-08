@@ -51,3 +51,8 @@ The special key `html_title` specifies the document title.
 Currently, it only works in Firefox.
 Other browsers do not allow the html scripts to access the markdown file.
 
+
+## Image Example
+
+![Sudoku board](Sudoku.svg)
+
