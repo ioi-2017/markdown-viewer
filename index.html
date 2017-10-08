@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Markdown Viewer</title>  
-  <meta name="version" content="6.2">
+  <title>Markdown Viewer</title>
+  <meta name="version" content="7.0">
   <link rel="stylesheet" href="assets/style.css">
   <script type="text/javascript" src="assets/libs.js"></script>
   <script type="text/javascript" src="assets/w3.js"></script>
@@ -16,7 +16,7 @@
 	<div class="credit" id="credit-container">
 		<div style="text-align:center;width:40%;margin-top:20px;"><a href="http://ioi2017.org/" target="_blank"><img src="assets/IOI-2017.svg" width="90%"/></a></div>
 		<div style="width:60%;">
-			<p style="font-size:14px;padding:0 15px;text-align:left;"> Credits: 
+			<p style="font-size:14px;padding:0 15px;text-align:left;"> Credits:
 			<br /><a href="http://ioi2017.org/" target="_blank" style="font-size:20px;">IOI 2017 Iran</a>
 			<br /><span style="font-size:16px;">Host Technical Committee</span>
 			<br />Hamid Zarrabizadeh<br />Ali Yadegari<br />Kian Mirjalali<br />Navid Saleh</p>
@@ -47,7 +47,7 @@
 		    tags = 'width=' + size[0] + ' height=' + size[1];
 		else
 		    tags = 'width=' + size[0];
-	    }else if(href && href.indexOf('=') != -1){		
+	    }else if(href && href.indexOf('=') != -1){
 		size = href.split('=')[1].split('x');
 		href = href.split('=')[0];
 		if (size[1])
@@ -55,8 +55,19 @@
 		else
 		    tags = 'width=' + size[0];
 	    }
-	    return ('<img src="' + href + '" alt="' + text + '" ' + tags + '>');
+	    return ('<div style="page-break-inside:avoid"><img src="' + href + '" alt="' + text + '" ' + tags + '></div>');
 	};
+
+	renderer.table = function(header, body){
+		return '<div style="page-break-inside:avoid"><table>\n'
+		    + '<thead>\n'
+		    + header
+		    + '</thead>\n'
+		    + '<tbody>\n'
+		    + body
+		    + '</tbody>\n'
+		    + '</table></div>\n';
+	}
 
 	// remove trailing newline in code blocks
 	renderer.code = function(code, language) {
@@ -135,7 +146,7 @@
 
 	
 	document.addEventListener('click', function(e) {
-		if(e.target.id!='copyright')	   
+		if(e.target.id!='copyright')
 			hideCredit();
 		else
 			toggleCredit();
@@ -148,7 +159,7 @@
 		document.getElementById("error-message").style.display = "block";
 		document.getElementById("error-message").textContent = "It only works in firefox";
 	}
-		
+	
 	readJsonProp(json_);
   </script>
 </body>
