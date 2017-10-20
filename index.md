@@ -14,7 +14,7 @@ Version: 7.1
 Generally: IOI 2017 Host Technical committee.
 
 More specifically:
-* Hamid Zarrabizadeh
+* Hamid Zarrabi-Zadeh
 * Ali Yadegari
 * Kian Mirjalali
 * Navid Saleh
