@@ -1,6 +1,3 @@
-/sandbox/
-/tests/
-/logs/
 
 # C++.gitignore
 
@@ -29,8 +26,6 @@
 *.exe
 *.app
 *.out
-# Except public directory
-!/public/**/*.out
 
 # Java.gitignore
 
