@@ -3,6 +3,8 @@ Markdown Viewer
 
 Markdown-viewer is a simple HTML-based tool for rendering IOI related markdown files including problem statements, editorials, notice, etc.
 In addition to standard markdown syntanx, it supports images, headers, footers, and mathematical formula in latex format.
+This tool has been developed and first used in the IOI 2017 in Tehran, Iran.
+Its development is based on [`IOI Translation System`](https://github.com/ioi-2017/translation).
 
 
 Usage
