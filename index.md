@@ -6,7 +6,7 @@ This small software is a child of the translation system created in IOI2017.
 
 Birth: IOI 2017 Iran
 
-Version: 7.1
+Version: 8.0
 
 
 ## Credits
@@ -48,8 +48,9 @@ The special key `html_title` specifies the document title.
 
 ## Defects
 
-Currently, it only works in Firefox.
-Other browsers do not allow the html scripts to access the markdown file.
+It needs running a HTTP server,
+  or modifying the browser configuration to allow the local html file access the markdown file in the file system.
+Such browser configuration modifications have some security risks and are currently available only in Firefox.
 
 
 ## Image Example
