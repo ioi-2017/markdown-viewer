@@ -1,25 +1,22 @@
 .header {
 	font-family: IRANSans, Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	letter-spacing: -.04em;
+	letter-spacing: -.02em;
 	font-weight: 400;
 }
 
 .header .title {
-	display: inline-block;
 	float: left;
-	line-height: 1.25em;
+	line-height: 1.5em;
 }
 
 .header .title div:first-child {
 	font-weight: 500;
 	font-size: 1.1em;
 	letter-spacing: -.03em;
-	margin: 0px 0px 3px;
 }
 
 .header .logo {
-	display: inline-block;
 	float: left;
 	margin-right: 0px;
 	margin-top: -2px;
@@ -32,20 +29,17 @@
 }
 
 .header .meta {
-	display: inline-block;
 	float: right;
 	text-align: right;
-	margin-top: 28px;
+	margin-top: 4px;
+	font-weight: bold;
 	font-size: 12px;
 }
 
 .header .meta div:first-child {
 	font-family: "Courier New", monospace;
-	font-weight: bold;
 	font-size: 18px;
 	letter-spacing: -.03em;
-	line-height: 25px;
-	margin: 0px;
 }
 
 .header hr {
