@@ -30,6 +30,11 @@
 						Markdown Viewer
 					</span>
 				</div>
+				<div>
+					<span style="font-size:14px;">
+						<span>Version: </span><span id="span_version_content">?</span>
+					</span>
+				</div>
 			</div>
 			<div>
 				<p style="font-size:14px; padding:0; padding-right: 15px; text-align:left; margin: 0;">
@@ -115,6 +120,10 @@ Contact through the issues in [the development repository](https://github.com/io
 	</div>
 	<script>
 		w3.includeHTML();
+
+		var version_meta = document.querySelector('meta[name="version"]');
+		if (version_meta)
+			document.getElementById('span_version_content').textContent = version_meta.content;
 
 		// Initialize Marked.js Renderer
 
