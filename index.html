@@ -109,12 +109,12 @@ Contact through the issues in [the development repository](https://github.com/io
 	<script>
 		w3.includeHTML();
 
-		// Initilize Makrded.js Renderer
+		// Initialize Marked.js Renderer
 
 		var renderer = new marked.Renderer();
 		var original_table_renderer = renderer.table;
 
-		// enable resize option for images
+		// Enable resize option for images
 		renderer.image = function(href, title, text) {
 			var tags = '';
 			if (title) {
@@ -204,9 +204,9 @@ Contact through the issues in [the development repository](https://github.com/io
 					if (rawFile.status === 200 || rawFile.status == 0) {
 						var props = JSON.parse(rawFile.responseText);
 						Object.keys(props).forEach(function(key) {
-							var elm = document.getElementById("prop_"+key);
-							if (elm)
-								elm.textContent = props[key];
+							var elem = document.getElementById("prop_"+key);
+							if (elem)
+								elem.textContent = props[key];
 						})
 					document.title = props["html_title"] ? props["html_title"] : "Markdown Viewer";
 					}
@@ -243,8 +243,8 @@ Contact through the issues in [the development repository](https://github.com/io
 			var ua = window.navigator.userAgent;
 			if (ua.toLowerCase().indexOf('firefox') <= -1)
 				return false;
-			var uamatch = ua.match(/Firefox\/([0-9]+)\./);
-			var ver = uamatch ? parseInt(uamatch[1]) : 0;
+			var ua_match = ua.match(/Firefox\/([0-9]+)\./);
+			var ver = ua_match ? parseInt(ua_match[1]) : 0;
 			return (ver < 68);
 		}
 
@@ -258,8 +258,4 @@ Contact through the issues in [the development repository](https://github.com/io
 		readJsonProp(json_);
 	</script>
 </body>
-<!--
-
-
- -->
 </html>
