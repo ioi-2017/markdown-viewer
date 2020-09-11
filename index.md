@@ -20,9 +20,11 @@ More specifically:
 * Navid Saleh
 
 
-## Headers and footers
+## Headers, Footers, and Styles
 
 Html headers and footers can be placed in `header.html` and `footer.html`, respectively.
+Custom styles (especially used for header and footer) can be placed in `style.css`.
+This overrides the default styles specified by the markdown viewer.
 
 
 ## Naming
