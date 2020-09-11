@@ -1483,7 +1483,6 @@ footer>p:hover {
 }
 .credit {
 	display: none;
-	width: 450px;
 	position: fixed;
 	bottom: 30px;
 	background-color: #ccc;
