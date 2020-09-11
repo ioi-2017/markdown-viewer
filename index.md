@@ -6,7 +6,7 @@ This small software is a child of the translation system created in IOI2017.
 
 Birth: IOI 2017 Iran
 
-Version: 8.0
+Version: 9.0
 
 
 ## Credits
